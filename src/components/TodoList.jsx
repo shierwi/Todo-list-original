@@ -3,7 +3,7 @@ import { TodoItem } from "./TodoItem";
 import { v4 as uuid } from "uuid";
 const KEY = "todoApp.todos";
 
-export function TodoList() {
+function TodoList() {
   const [todos, setTodos] = useState([]);
   const [editTaskId, setEditTaskId] = useState(null);
   const [newTask, setNewTask] = useState("");
@@ -143,3 +143,4 @@ export function TodoList() {
     </Fragment>
   );
 }
+export default TodoList;
